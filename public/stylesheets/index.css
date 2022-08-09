@@ -1,0 +1,78 @@
+nav {
+    display: none;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-me button {
+    border: none;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.contact-me h3 {
+    border: none;
+    margin: 2em 0;
+    border-radius: 10px;
+}
+
+.homepage_main_container {
+    align-items: center;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .homepage_main_container h3 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .homepage_section_hero_title {
+    color: var(--homepage-section-hero-title-text-color);
+    font-size: 6.4rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+    margin: 1.5em;
+  }
+  
+  .homepage_section_subtitle {
+    color: #fff;
+    font-size: 2rem;
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-weight: 300;
+    margin: 0.5em;
+  }
+
+.homepage_main_container.dark_section {
+    border-radius: 0 0 5em 5em;
+    height: 110vh;
+}
+
+.homepage_section_hero_title {
+    font-family: "Akshar", sans-serif;
+    font-size: 14.4em;
+    margin: 10px 0;
+}
+
+.img-container-overflowed, .picture-who-am-i {
+    height: 17em;
+    position: relative;
+    width: 24em;
+}
+
+    .img-container-overflowed img {
+        position: absolute;
+        bottom: 0;
+    }   
+
+.skills-levels ul {
+    list-style: none;
+}

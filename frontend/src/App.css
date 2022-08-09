@@ -1,0 +1,29 @@
+main {
+	align-items: center;
+	color: var(--primary-text-color);
+	background-color: var(--primary-bg-color);
+	display: grid;
+	font-family: var(--default-font-family);
+	min-height: 100vh;
+}
+
+.presentation {
+	align-items: center;
+	padding: 5em 0 2em 0;
+}
+
+.projects {
+	align-items: center;
+	background-color: var(--secondary-bg-color);
+	gap: 1.5em;
+	padding: 4em;
+}
+
+.skills-cards-container {
+	display: flex;
+	justify-content: center;
+}
+
+.skills-description {
+	text-align: center;
+}

@@ -1,0 +1,16 @@
+{
+    "homepage": {
+        "first_subtitle": "Web Developer",
+        "hero_title": "HELLO!",
+        "have_something_in_mind": "Have a great idea?",
+        "hire_me": "Start your project with me",
+        "short_description": "I'm a passionated web developer who fell in love with Javascript, and love to learn new fun things",
+        "who_am_i": "Who am I?",
+        "why_hire_me": "¿Why hire me?"
+    },
+    "footer": {
+        "version_title": "Version",
+        "local_tim_title": "Local Time",
+        "version": "2022 Edition"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "homepage": {
+        "first_subtitle": "Desarrollador Web",
+        "hero_title": "!HOLA!",
+        "have_something_in_mind": "¿Ya tienes una gran idea?",
+        "hire_me": "Comienza tu proyecto conmigo",
+        "short_description": "Soy un apasionado desarrollador web que se enamoró de Javascript, y le gusta aprender siempre",
+        "who_am_i": "¿Quíen soy yo?",
+        "why_hire_me": "¿Por qué contratarme?"
+    },
+    "footer": {
+        "version_title": "Versión",
+        "local_tim_title": "Hora Local",
+        "version": "Edición 2022"
+    }
+}

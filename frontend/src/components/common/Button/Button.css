@@ -1,0 +1,17 @@
+button {
+	background: linear-gradient(-135deg, transparent .5em, var(--accent-bg-color) 0) top,
+				linear-gradient(45deg, transparent .5em, var(--accent-bg-color) 0) bottom;
+	background-size: 100% 51%;
+	background-repeat: no-repeat;
+	border: 0;
+	color: var(--primary-bg-color);
+	margin: 1em 0;
+	max-width: 20rem;
+	padding: 1em 2em;
+	font-weight: 600;
+}
+
+button:hover {
+	/*box-shadow: 0 0 0 0 var(--accent-color);*/
+	box-shadow: inset var(--accent-bg-color) 0px 0px 16px 0px, var(--accent-bg-color) 0px 0px 16px 0px;
+}

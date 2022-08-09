@@ -1,0 +1,44 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--default-font-family);
+}
+
+main {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1, h2 {
+  color: var(--title-color);
+}
+
+/* Font Fira Code */
+@import url(./fonts/fira-code/fira_code.css);
+
+/* Global variables and theming*/
+:root {
+  --default-font-family: "Fira Code", "Lucida Console", sans-serif;
+}
+
+.light-theme {
+  --primary-bg-color: #ffffff;
+  --primary-text-color: #021b39;
+}
+
+.dark-theme {
+  --accent-bg-color: #30f3ff;
+  --primary-bg-color: #021b39;
+  --primary-text-color: #ffffff;
+  --secondary-bg-color: #031833;
+  --soft-bg-color: #11498dd2;
+  --blocked-text-color: #dbdbdbad;
+  --title-color: #30f3ff;
+}

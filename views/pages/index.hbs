@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  {{> header  title="Brian Madroñero - Web Developer" page_styles="index"}}
+</head>
+
+<body>
+  <nav>    
+    <label class="switch">
+      <input type="checkbox" checked>
+      <span class="slider round">en -- es</span>
+    </label>
+  </nav>
+  <section class="homepage_main_container dark_section">
+    <h1 class="homepage_section_title homepage_section_hero_title">{{lang 'homepage.hero_title'}}</h1>
+    <h2 class="homepage_section_title homepage_section_subtitle">{{lang 'homepage.first_subtitle'}}</h2>
+  </section>
+  <section class="homepage_main_container">
+    <h3>{{lang 'homepage.who_am_i'}}</h3>
+    <div class="picture-who-am-i">
+      <img src="/assets/img/who-i-am.jpg" alt="">
+    </div>
+    <div class="short-description">
+      <p>Brian Madroñero<br>{{lang 'homepage.short_description'}}</p>
+    </div>    
+  </section>
+  <section class="homepage_main_container"> 
+    <h3>{{lang 'homepage.why_hire_me'}}</h3>
+    <div class="skills-levels">
+      <h3>Programming Languages</h3>
+      <ul>
+        {{#each skills}}
+          <li class="skill-list">
+            <label for="file"><i class="{{icon_class}}"></i></label>
+            <progress id="file" max="100" value="{{percent}}"> {{percent}}% </progress>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="img-container-overflowed">
+      <img src="/assets/img/skills.png" alt="">
+    </div>
+  </section>
+  <section class="homepage_main_container"> 
+    <div class="contact-me">
+      <h3>{{lang "homepage.have_something_in_mind"}}</h3>
+      <button>{{lang "homepage.hire_me"}}</button><!--Get a call-->
+    </div>
+  </section>
+  {{> footer script="/scripts/shazer/global.js"}}
+</body>
+</html>

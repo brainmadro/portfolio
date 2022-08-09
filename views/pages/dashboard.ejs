@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%- include ("../partials/header.ejs", { title: "Dashboard - Shazer"}) %>
+</head>
+<body>
+  <%- include ("../partials/nav.ejs") %>
+  <div class="dashboard-container">
+    <section class="container">
+      <div class="calendar-container">
+          <ul class="calendar-header">
+            <li></li>
+            <li>Domingo<span class="day_date"></span></li>
+            <li>Lunes<span class="day_date"></span></li>
+            <li>Martes<span class="day_date"></span></li>
+            <li>Miércoles<span class="day_date"></span></li>
+            <li>Jueves<span class="day_date"></span></li>
+            <li>Viernes<span class="day_date"></span></li>
+            <li>Sábado<span class="day_date"></span></li>
+          </ul>
+          <div class="hours-container">
+            <ul class="hours"></ul>
+            <ul class="hour_box_container" data-hours="sunday"></ul>
+            <ul class="hour_box_container" data-hours="monday"></ul>
+            <ul class="hour_box_container" data-hours="tuesday"></ul>
+            <ul class="hour_box_container" data-hours="wednesday"></ul>
+            <ul class="hour_box_container" data-hours="thursday"></ul>
+            <ul class="hour_box_container" data-hours="friday"></ul>
+            <ul class="hour_box_container" data-hours="saturday"></ul>
+          </div>
+      </div>
+    </section>
+    <aside class="side-info-container">
+      <div class="small-calendar"> <!--https://www.behance.net/gallery/116700003/Health-Dashboard-Desktop-App-UIUX-Design?tracking_source=search_projects%7Ccalendar%20ui-->
+        <div class="calendar header">
+          <a class="icon icon-left" data-before>
+            <i class="fa-solid fa-chevron-left"></i>
+          </a>
+          <span class="calendar_title_date"><%= today %></span>
+          <a class="icon icon-right" data-next>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="calendar dates">
+          <div class="weekdays">
+            <span class="weekday">D</span>
+            <span class="weekday">L</span>
+            <span class="weekday">M</span>
+            <span class="weekday">M</span>
+            <span class="weekday">J</span>
+            <span class="weekday">V</span>
+            <span class="weekday">S</span>
+          </div>
+          <div class="number_days"></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <%- include ("../partials/footer.ejs", { script: "/scripts/dasboard.js"}) %>
+</body>
+</html>
