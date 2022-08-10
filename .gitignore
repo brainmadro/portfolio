@@ -6,7 +6,7 @@ npm-debug.log
 *.env
 *.dev
 .DS_Store
-
+shazer-madro-firebase-adminsdk-3u8w9-a701f09e15.json
 # Docker
 Dockerfile
 docker-compose.yml
