@@ -7,9 +7,27 @@ main {
 	min-height: 100vh;
 }
 
+/* .background {
+	min-height: 65vh;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+} */
+
 .presentation {
 	align-items: center;
+	background-image: url(./assets/universe-2742113-filter.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-sizing: border-box;
 	padding: 5em 0 2em 0;
+	position: relative;
+	min-height: 65vh;
+	
+    flex-direction: row;
+    justify-content: center;
+    gap: 7em;
 }
 
 .projects {
@@ -19,6 +37,10 @@ main {
 	padding: 4em;
 }
 
+.skills {
+	padding: 5em 0;
+}
+
 .skills-cards-container {
 	display: flex;
 	justify-content: center;
@@ -26,4 +48,51 @@ main {
 
 .skills-description {
 	text-align: center;
+}
+
+.summary {
+	position: relative;
+}
+
+/* ======================== */
+
+.id-card {
+	align-items: center;
+	background-image: url(assets/carnet-background.png);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	justify-content: flex-start;
+	overflow: hidden;
+	position: relative;
+  	width: 320px;
+}
+
+.id-card h5 {
+	font-size: 16pt;
+	font-weight: 600;
+	margin-top: 2em;
+}
+
+.id-card p {
+	bottom: 18%;
+	font-size: 8pt;
+	position: absolute;
+	transition: all ease .9s;
+}
+
+.id-card p.descCard {
+	bottom: -10%;
+}
+  
+.photo {
+	background-image: url(assets/carnet-photo.png);
+	background-size: cover;
+	background-position: center;
+	margin-top: 35%;
+	height: 40%;
+	transition: all ease 0.8s;
+	width: 62%;
+	z-index: 100;
 }

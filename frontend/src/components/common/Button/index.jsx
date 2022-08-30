@@ -1,8 +1,12 @@
 import "./Button.css";
 
+function handleClick(onClick) {
+	onClick()
+}
+
 function Button(props) {
 	return (
-	  <button>{props.text}</button>
+	  <button onClick={() => handleClick(props.onClick)}>{props.text}</button>
 	);
 }
   

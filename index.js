@@ -1,28 +1,37 @@
 const express = require('express')
 const session = require('express-session')
-const bodyParser = require('body-parser')
 const path = require('path')
-const ipLocation = require('iplocation')
-const ipapi = require('ipapi.co')
 const fs = require('fs')
-const hbs = require('hbs')
-hbs.registerPartials(__dirname + '/views/partials', function (err) {})
+/* const hbs = require('hbs')
+hbs.registerPartials(__dirname + '/views/partials', function (err) {}) */
 const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
 const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
 const PORT = process.env.PORT || 5000
 
 //Initializations
 const serviceAccount = require('./shazer-madro-firebase-adminsdk-3u8w9-a701f09e15.json');
-const { log, Console } = require('console');
 initializeApp({
   credential: cert(serviceAccount)
 });
 const db = getFirestore();
 
-const countriesEN = ['US'];
-const countriesES = ['CO'];
-var langTexts = {};
+const app = express()
+const v1MeRouter = require('./v1/routes/meRoutes')
 
+app.use(express.json())
+app.use("/me/v1", v1MeRouter)
+
+app.use(express.static(path.join(__dirname, 'frontend/build')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'frontend/build', 'index.html')))
+app.get('*', (req, res) => res.send({ status: 404, body: 'Not Found' }))
+
+app.listen(PORT, () => console.log(`Server listening on ${ PORT }`))
+
+
+
+
+/* 
+Old Version
 express()
   .use(express.static(path.join(__dirname, 'public')))
   .use(bodyParser.json())
@@ -153,7 +162,7 @@ express()
   .get('*', (req, res) => {
     res.render('pages/404')
   })
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`)) */
 
 
 //Authentication
