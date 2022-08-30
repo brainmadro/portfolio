@@ -4,16 +4,16 @@ const path = require('path')
 const fs = require('fs')
 /* const hbs = require('hbs')
 hbs.registerPartials(__dirname + '/views/partials', function (err) {}) */
-const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
-const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
+/* const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
+const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore'); */
 const PORT = process.env.PORT || 5000
 
 //Initializations
-const serviceAccount = require('./shazer-madro-firebase-adminsdk-3u8w9-a701f09e15.json');
+/* const serviceAccount = require('./shazer-madro-firebase-adminsdk-3u8w9-a701f09e15.json');
 initializeApp({
   credential: cert(serviceAccount)
 });
-const db = getFirestore();
+const db = getFirestore(); */
 
 const app = express()
 const v1MeRouter = require('./v1/routes/meRoutes')
