@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5bfa16a4.css",
+    "main.js": "/static/js/main.88e68fd9.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/universe-2742113-filter.jpg": "/static/media/universe-2742113-filter.869da8bcc7735dd0d4f2.jpg",
+    "static/media/carnet-background.png": "/static/media/carnet-background.71f8bfde384eb69ffc15.png",
+    "static/media/FiraCode-VF.woff": "/static/media/FiraCode-VF.d7af67f866f9a5e0a113.woff",
+    "static/media/FiraCode-Bold.woff": "/static/media/FiraCode-Bold.e3428b597c378e1fdcb0.woff",
+    "static/media/FiraCode-SemiBold.woff": "/static/media/FiraCode-SemiBold.4558fb863ac61e930234.woff",
+    "static/media/FiraCode-Regular.woff": "/static/media/FiraCode-Regular.a25d3a54ca0de3944eb7.woff",
+    "static/media/FiraCode-Light.woff": "/static/media/FiraCode-Light.a81da37f7831691b78df.woff",
+    "static/media/FiraCode-Medium.woff": "/static/media/FiraCode-Medium.97af194ae4a793b66f40.woff",
+    "static/media/FiraCode-VF.woff2": "/static/media/FiraCode-VF.7fef988ad994d5988ff3.woff2",
+    "static/media/FiraCode-Bold.woff2": "/static/media/FiraCode-Bold.abe3ab87cff86bb05610.woff2",
+    "static/media/FiraCode-SemiBold.woff2": "/static/media/FiraCode-SemiBold.564932952cfbb676de45.woff2",
+    "static/media/FiraCode-Regular.woff2": "/static/media/FiraCode-Regular.bf5ea52fa0094c7f7621.woff2",
+    "static/media/FiraCode-Light.woff2": "/static/media/FiraCode-Light.89b207dfa6dd890c3f41.woff2",
+    "static/media/FiraCode-Medium.woff2": "/static/media/FiraCode-Medium.1bc138a84f63b384c3f2.woff2",
+    "static/media/carnet-photo.png": "/static/media/carnet-photo.8478e4ed26e7706360fa.png",
+    "index.html": "/index.html",
+    "main.5bfa16a4.css.map": "/static/css/main.5bfa16a4.css.map",
+    "main.88e68fd9.js.map": "/static/js/main.88e68fd9.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bfa16a4.css",
+    "static/js/main.88e68fd9.js"
+  ]
+}
