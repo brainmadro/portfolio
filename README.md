@@ -5,6 +5,6 @@ Express
 React
 Node
 
-## Deploied on Heroku
+## Deployed on Heroku
 
 This project live in Heroku and you can open it with https://www.brainmadro.com or https://afternoon-basin-96093.herokuapp.com/
