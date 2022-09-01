@@ -1,3 +1,5 @@
+const { db } = require("./utilsDatabase");
+
 const DB = [
   { name: 'html', level: 90 },
   { name: 'css', level: 90 },
@@ -10,6 +12,7 @@ const DB = [
 ]
 
 const getAllProgrammingLanguages = () => {
+  console.log(db.connection);
   return DB;
 };
 
