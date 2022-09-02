@@ -11,8 +11,10 @@ import {
 	faGulp, 
 	faFontAwesome, 
 	faJava,
-	faShopify
+	faShopify,
+	faGithub
 } from '@fortawesome/free-brands-svg-icons'
+import { faMongoDb, faPostgreSql, faDigitalOcean, faHeroku, faAmazonAws, faFirebase, faWebpack } from './custom-icons'
 import { Button, Title, SubTitle, Heading } from './components/common/index';
 import SkillCard from './components/SkillCard'
 import ProjectCard from './components/ProjectCard'
@@ -21,7 +23,7 @@ import utils from './utils'
 import './main.css';
 import './App.css';
 
-library.add(faSquareJs, faHtml5, faCss3, faSass, faNodeJs, faReact, faGulp, faJava, faFontAwesome, faStar, faShopify)
+library.add(faSquareJs, faHtml5, faCss3, faSass, faNodeJs, faReact, faGulp, faJava, faFontAwesome, faStar, faShopify, faGithub, faMongoDb, faPostgreSql, faDigitalOcean, faHeroku, faAmazonAws, faFirebase, faWebpack )
 
 function sendEmail() {
 	window.open('mailto:brainmadro@gmail.com');
@@ -44,7 +46,6 @@ function App() {
 
 		utils.location.getGeoLocation()
 		.then(res => {
-			//lang.current = (countriesES.includes(res.data.country)) ? 'es' : 'en'
 			setLang((countriesES.includes(res.data.country)) ? 'es' : 'en')
 		})
 
@@ -56,10 +57,9 @@ function App() {
 		.then(response => {
 			setText(text => ({
 				...text,
-				...response.data.homepage
+				...response.homepage
 			}))
 		})
-		console.log(text);
 	}, [lang])
 
 	function expandPhoto() {

@@ -1,9 +1,9 @@
 {
 	"homepage": {
-		"greeting": "Hello, I'm",
-		"position": "Full Stack Web Developer",
 		"contactButton": "Let's talk",
+		"greeting": "Hello, I'm",
 		"languagesTitle": "WHAT I USE",
+		"position": "Full Stack Web Developer",
 		"thisCode": "Look the code of this website"
 	}
 }

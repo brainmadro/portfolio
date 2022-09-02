@@ -42,3 +42,19 @@ h1, h2 {
 
 /* Font Fira Code */
 @import url(./fonts/fira-code/fira_code.css);
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30pt;
+  }
+
+  h2 {
+    color: var(--title-color);
+  }
+}
+
+@media (max-width: 640px) {
+
+}

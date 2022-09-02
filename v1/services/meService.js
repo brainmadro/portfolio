@@ -1,10 +1,8 @@
-const Experience = require("../database/experience");
-const EN = require("../database/en");
-const ES = require("../database/es");
+const experience = require("../database/experience");
 
 const getAllProgrammingLanguages = () => {
-	const experience = Experience.getAllProgrammingLanguages()
-	return experience
+	const xp = experience.getAllProgrammingLanguages()
+	return xp
 };
   
 const createProgrammingLanguage = () => {
@@ -19,15 +17,9 @@ const deleteProgrammingLanguage = () => {
 	return;
 };
   
-const getLanguage = (lang) => {
-	if (lang != "es") return EN
-	return ES
-};
-  
 module.exports = {
 	getAllProgrammingLanguages,
 	createProgrammingLanguage,
 	updateProgrammingLanguage,
-	deleteProgrammingLanguage,
-	getLanguage
+	deleteProgrammingLanguage
 };

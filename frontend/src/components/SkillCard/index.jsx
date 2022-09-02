@@ -12,13 +12,18 @@ function SkillCard(props) {
 		javascript: 'fa-brands fa-square-js',
 		nodejs: 'fa-brands fa-node-js',
 		react: 'fa-brands fa-react',
-		reactNative: 'fa-brands fa-react',
-		postgreSQL: 'fa-brands fa-sass',
 		sass: 'fa-brands fa-sass',
 		gulpjs: 'fa-brands fa-gulp',
-		webpack: 'fa-brands fa-webpack',
 		java: 'fa-brands fa-java',
 		shopify: 'fa-brands fa-shopify',
+		github:  'fa-brands fa-github',
+		mongodb: 'fac fa-mongodb',
+		postgreSQL: 'fac fa-postgresql',
+		digitalOcean: 'fac fa-digital-ocean', 
+		heroku: 'fac fa-heroku', 
+		amazonAws: 'fac fa-amazon-aws', 
+		firebase: 'fac fa-firebase',
+		webpack: 'fac fa-webpack'
 	}
 
 	useEffect(() => {

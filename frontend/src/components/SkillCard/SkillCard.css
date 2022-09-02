@@ -19,3 +19,21 @@
 .filled-star {
 	color: #ebbd0c;
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+	
+
+	.skill-container {
+		background: linear-gradient(121deg, transparent 1em, var(--soft-bg-color) 0);
+		margin: .5em;
+		padding: .5em;
+	}
+
+	.skill-language-icon {
+		font-size: 2em;
+	}
+
+	.skill-level {
+		font-size: .8em;
+	}
+}

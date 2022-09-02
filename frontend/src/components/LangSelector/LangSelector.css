@@ -15,8 +15,8 @@ span[class*='-label'] {
 .switch {
 	position: relative;
 	display: inline-block;
-	width: 53px;
-	height: 25px;
+	width: 3.3em;
+	height: 1.5em;
   }
   
   .switch input { 
@@ -40,10 +40,10 @@ span[class*='-label'] {
   .slider:before {
 	position: absolute;
 	content: "";
-	height: 19px;
-	width: 19px;
-	left: 6px;
-	bottom: 3px;
+	height: 1.1em;
+	width: 1.1em;
+	left: .3em;
+	bottom: .2em;
 	background-color: white;
 	-webkit-transition: .4s;
 	transition: .4s;
@@ -58,9 +58,9 @@ span[class*='-label'] {
   }
   
   input:checked + .slider:before {
-	-webkit-transform: translateX(19px);
-	-ms-transform: translateX(19px);
-	transform: translateX(19px);
+	-webkit-transform: translateX(1.6em);
+	-ms-transform: translateX(1.6em);
+	transform: translateX(1.6em);
   }
   
   /* Rounded sliders */
@@ -71,3 +71,15 @@ span[class*='-label'] {
   .slider.round:before {
 	border-radius: 50%;
   }
+
+@media (max-width: 768px) {
+	.selector-container {
+		font-size: .6em;
+	}
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+	.presentation {
+		flex-direction: column;
+	}
+}

@@ -15,7 +15,7 @@ const getProgrammingLanguages = async () => {
 }
 
 const getLang = async (lang) => {
-	const res = await sendGETRequest(`${meRoot}/lang/${lang}`)
+	const res = require(`./lang/${lang}.json`);
 	return res
 }
 

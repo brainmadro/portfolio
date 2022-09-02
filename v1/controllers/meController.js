@@ -1,8 +1,8 @@
 const meService = require('../services/meService');
 const utils = require('./utils')
 
-const getAllProgrammingLanguages = (req, res) => {
-	const response = meService.getAllProgrammingLanguages()
+const getAllProgrammingLanguages = async (req, res) => {
+	const response = await meService.getAllProgrammingLanguages()
 	res.send({ status: "OK", data: response });
 };
   
@@ -22,11 +22,6 @@ const deleteProgrammingLanguage = (req, res) => {
 	res.send("Delete an existing workout");
 };
 
-const getLanguage = (req, res) => {
-	const response = meService.getLanguage(req.params.lang)
-	res.send({ status: "OK", data: response });
-};
-
 const getGeoLocation = (req, res) => {
 	var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress 
 	if (ip.startsWith('localhost') || ip.startsWith('127') || ip.startsWith('::')) ip = '181.137.204.208'
@@ -41,6 +36,5 @@ module.exports = {
 	createProgrammingLanguage,
 	updateProgrammingLanguage,
 	deleteProgrammingLanguage,
-	getLanguage,
 	getGeoLocation
 };
