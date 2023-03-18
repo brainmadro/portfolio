@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'frontend/build')));
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'frontend/build', 'index.html')))
 app.get('*', (req, res) => res.send({ status: 404, body: 'Not Found' }))
 
-app.listen(PORT, () => console.log(`Server listening on ${ PORT }`))
+app.listen(PORT, () => console.log(`Server listening on ${ PORT }\nhttp://localhost:${ PORT }/`))
 
 
 
