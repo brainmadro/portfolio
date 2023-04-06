@@ -23,7 +23,11 @@ function SkillCard(props) {
 		heroku: 'fac fa-heroku', 
 		amazonAws: 'fac fa-amazon-aws', 
 		firebase: 'fac fa-firebase',
-		webpack: 'fac fa-webpack'
+		webpack: 'fac fa-webpack',
+		git: 'fa-brands fa-git-alt',
+		gitlab: 'fa-brands fa-gitlab',
+		php: 'fa-brands fa-php',
+		docker: 'fa-brands fa-docker',
 	}
 
 	useEffect(() => {

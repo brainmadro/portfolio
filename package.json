@@ -1,9 +1,9 @@
 {
-  "name": "node-js-getting-started",
+  "name": "portfolio-brainmadro",
   "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "My own portfolio where myself have a home",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "main": "index.js",
   "scripts": {
@@ -12,32 +12,32 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "@babel/helper-module-imports": "^7.18.6",
-    "@fortawesome/fontawesome-svg-core": "^6.1.2",
-    "@fortawesome/free-brands-svg-icons": "^6.1.2",
-    "@fortawesome/free-regular-svg-icons": "^6.1.2",
-    "@fortawesome/free-solid-svg-icons": "^6.1.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@babel/helper-module-imports": "7.18.6",
+    "@fortawesome/fontawesome-svg-core": "6.1.2",
+    "@fortawesome/free-brands-svg-icons": "6.1.2",
+    "@fortawesome/free-regular-svg-icons": "6.1.2",
+    "@fortawesome/free-solid-svg-icons": "6.1.2",
+    "@fortawesome/react-fontawesome": "0.2.0",
     "animate.css": "4.1.1",
     "ejs": "3.1.8",
-    "express": "^4.17.3",
-    "express-session": "^1.17.2",
-    "firebase": "^9.6.7",
-    "firebase-admin": "^10.0.2",
-    "firebaseui": "^6.0.0",
+    "express": "4.17.3",
+    "express-session": "1.17.2",
+    "firebase": "9.6.7",
+    "firebase-admin": "10.0.2",
+    "firebaseui": "6.0.0",
     "geoip-lite": "1.4.6",
     "hbs": "4.2.0",
     "mongodb": "4.9.1"
   },
   "devDependencies": {
-    "dotenv": "^16.0.1",
-    "got": "^11.8.5",
-    "nodemon": "^2.0.19",
-    "tape": "^4.7.0"
+    "dotenv": "16.0.1",
+    "got": "11.8.5",
+    "nodemon": "2.0.19",
+    "tape": "4.7.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/brainmadro/portfolio.git"
   },
   "keywords": [
     "node",
