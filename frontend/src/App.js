@@ -12,7 +12,11 @@ import {
 	faFontAwesome, 
 	faJava,
 	faShopify,
-	faGithub
+	faGithub,
+	faGitlab,
+	faPhp,
+	faGitAlt,
+	faDocker
 } from '@fortawesome/free-brands-svg-icons'
 import { faMongoDb, faPostgreSql, faDigitalOcean, faHeroku, faAmazonAws, faFirebase, faWebpack } from './custom-icons'
 import { Button, Title, SubTitle, Heading } from './components/common/index';
@@ -23,7 +27,7 @@ import utils from './utils'
 import './main.css';
 import './App.css';
 
-library.add(faSquareJs, faHtml5, faCss3, faSass, faNodeJs, faReact, faGulp, faJava, faFontAwesome, faStar, faShopify, faGithub, faMongoDb, faPostgreSql, faDigitalOcean, faHeroku, faAmazonAws, faFirebase, faWebpack )
+library.add(faSquareJs, faHtml5, faCss3, faSass, faNodeJs, faReact, faGulp, faJava, faFontAwesome, faStar, faShopify, faGithub, faMongoDb, faPostgreSql, faDigitalOcean, faHeroku, faAmazonAws, faFirebase, faWebpack, faGitlab, faPhp, faGitAlt, faDocker )
 
 function sendEmail() {
 	window.open('mailto:brainmadro@gmail.com');
