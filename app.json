@@ -2,6 +2,6 @@
   "name": "My Portfolio",
   "description": "This is my home, where brainmadro can be found",
   "repository": "https://github.com/brainmadro/portfolio",
-  "keywords": ["node", "express", "heroku", "react", "mern", "javascript"],
-  "image": "heroku/nodejs"
+  "keywords": ["node", "express", "heroku", "react", "mern", "javascript", "aws"],
+  "image": "nodejs"
 }

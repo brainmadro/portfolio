@@ -1,4 +1,4 @@
-const meRoot = '/me/v1'
+const ME_ROOT = '/me/v1'
 
 async function sendGETRequest(url) {
 	const res = await fetch(url)
@@ -10,7 +10,7 @@ async function sendGETRequest(url) {
 }
 
 const getProgrammingLanguages = async () => {
-	const res = await sendGETRequest(`${meRoot}/languages`)
+	const res = await sendGETRequest(`${ME_ROOT}/languages`)
 	return res
 }
 
@@ -20,7 +20,7 @@ const getLang = async (lang) => {
 }
 
 const getGeoLocation = async () => {
-	const res = await sendGETRequest(`${meRoot}/location`)
+	const res = await sendGETRequest(`${ME_ROOT}/location`)
 	return res
 }
 
